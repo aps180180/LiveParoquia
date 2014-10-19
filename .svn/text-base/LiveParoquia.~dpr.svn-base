@@ -1,0 +1,174 @@
+program LiveParoquia;
+
+uses
+  Forms,
+  uPrincipal in 'uPrincipal.pas' {fPrincipal},
+  Sistools in 'Sistools.pas',
+  uDMDados in 'uDMDados.pas' {dmDados: TDataModule},
+  uDM1 in 'uDM1.pas' {DM1: TDataModule},
+  uLogin in 'uLogin.pas' {fLogin},
+  uParoquias in 'uParoquias.pas' {fParoquias},
+  uConsultaParoquias in 'uConsultaParoquias.pas' {fConsultaParoquias},
+  uArquidiocese in 'uArquidiocese.pas' {fArquidiocese},
+  uComunidades in 'uComunidades.pas' {fComunidades},
+  uCatequista in 'uCatequista.pas' {fCatequista},
+  uConsultaCatequista in 'uConsultaCatequista.pas' {fConsultaCatequista},
+  uDizimista in 'uDizimista.pas' {fDizimista},
+  uConsultaArquidiocese in 'uConsultaArquidiocese.pas' {fConsultaArquidiocese},
+  uMinistrosPadres in 'uMinistrosPadres.pas' {fMinistrosPadres},
+  uConsultaComunidade in 'uConsultaComunidade.pas' {fConsultaComunidade},
+  uConsultaDizimista in 'uConsultaDizimista.pas' {fConsultaDizimista},
+  uConsultaMinistrosPadres in 'uConsultaMinistrosPadres.pas' {fConsultaMinistrosPadres},
+  uIntencoesMissas in 'uIntencoesMissas.pas' {fIntencoesMissas},
+  uConsultaIntencoesMissas in 'uConsultaIntencoesMissas.pas' {fConsultaIntencoesMissas},
+  uMarca in 'uMarca.pas' {fMarca},
+  uConsultaMarca in 'uConsultaMarca.pas' {fConsultaMarca},
+  uGrupo in 'uGrupo.pas' {fGrupo},
+  uConsultaGrupo in 'uConsultaGrupo.pas' {fConsultaGrupo},
+  uCrismandos in 'uCrismandos.pas' {fCrismandos},
+  uConsultaCrismandos in 'uConsultaCrismandos.pas' {fConsultaCrismandos},
+  uBatizados in 'uBatizados.pas' {fBatizados},
+  uConsultaBatizados in 'uConsultaBatizados.pas' {fConsultaBatizados},
+  uEucaristia in 'uEucaristia.pas' {fEucaristia},
+  uConsultaEucaristia in 'uConsultaEucaristia.pas' {fConsultaEucaristia},
+  uConfig in 'uConfig.pas' {fConfig},
+  uBatisterio in 'uBatisterio.pas' {fBatisterio},
+  uConsultaBatisterio in 'uConsultaBatisterio.pas' {fConsultaBatisterio},
+  uCrisma in 'uCrisma.pas' {fCrisma},
+  uEucaristico in 'uEucaristico.pas' {fEucaristico},
+  uConsultaEucaristico in 'uConsultaEucaristico.pas' {fConsultaEucaristico},
+  uConsultaCrisma in 'uConsultaCrisma.pas' {fConsultaCrisma},
+  uLembrancaEucaristia in 'uLembrancaEucaristia.pas' {fLembrancaEucaristia},
+  uDizimo in 'uDizimo.pas' {fDizimo},
+  uRelBatismo in 'uRelBatismo.pas' {fRelBatismo},
+  uRelEucaristico in 'uRelEucaristico.pas' {fRelEucaristico},
+  uRelCrisma in 'uRelCrisma.pas' {fRelCrisma},
+  ULog in 'ULog.pas' {fLog},
+  uConsultaDizimo in 'uConsultaDizimo.pas' {fConsultaDizimo},
+  uPesquisaDizimista in 'uPesquisaDizimista.pas' {fPesquisaDizimista},
+  uRelPeriodico in 'uRelPeriodico.pas' {fRelPeriodico},
+  uAniversariantes in 'uAniversariantes.pas' {fAniversariantes},
+  uExtratoGeral in 'uExtratoGeral.pas' {fExtratoGeral},
+  uUsuarios in 'uUsuarios.pas' {fUsuarios},
+  uPermissoes in 'uPermissoes.pas' {fPermissoes},
+  uFornecedor in 'uFornecedor.pas' {fFornecedor},
+  uConsultaFornecedor in 'uConsultaFornecedor.pas' {fConsultaFornecedor},
+  uPrevRecebDia in 'uPrevRecebDia.pas' {fPrevRecebDia},
+  U_Cipher in 'UnitSeg\U_Cipher.pas',
+  IDEA in 'UnitSeg\IDEA.pas',
+  Md5 in 'UnitSeg\Md5.pas',
+  Sha1 in 'UnitSeg\Sha1.pas',
+  DCPcrypt in 'UnitSeg\DCPcrypt.pas',
+  DCPconst in 'UnitSeg\DCPconst.pas',
+  Base64 in 'UnitSeg\Base64.pas',
+  uMatrimonio in 'uMatrimonio.pas' {fMatrimonio},
+  uCadNoivos in 'uCadNoivos.pas' {fCadNoivos},
+  uConsultaNoivos in 'uConsultaNoivos.pas' {fConsultaNoivos},
+  uConsultaMatrimonio in 'uConsultaMatrimonio.pas' {fConsultaMatrimonio},
+  uContas in 'uContas.pas' {fContas},
+  uConsultaContas in 'uConsultaContas.pas' {fConsultaContas},
+  uTipoPgto in 'uTipoPgto.pas' {fTipoPgto},
+  uConsultaTipoPgto in 'uConsultaTipoPgto.pas' {fConsultaTipoPgto},
+  uConsultaUsuarios in 'uConsultaUsuarios.pas' {fConsultaUsuarios},
+  uRelMatrimonio in 'uRelMatrimonio.pas' {fRelMatrimonio},
+  uLancIntencoes in 'uLancIntencoes.pas' {fLancIntencoes},
+  uConsultaLancIntencoes in 'uConsultaLancIntencoes.pas' {fConsultaLancIntencoes},
+  uRelIntencoesMissa in 'uRelIntencoesMissa.pas' {fRelIntencoesMissa},
+  uContasPagar in 'uContasPagar.pas' {fContasPagar},
+  uConsultaContasPagar in 'uConsultaContasPagar.pas' {fConsultaContasPagar},
+  uAgendaTelefones in 'uAgendaTelefones.pas' {fAgendaTelefones},
+  uConsultaAgendaTelefones in 'uConsultaAgendaTelefones.pas' {fConsultaAgendaTelefones},
+  uLembrancaMatrimonio in 'uLembrancaMatrimonio.pas' {fLembrancaMatrimonio},
+  uMovimentoBancario in 'uMovimentoBancario.pas' {fMovimentoBancario},
+  uCertidaoNegBatismo in 'uCertidaoNegBatismo.pas' {fCertidaoNegBatismo},
+  uLancCaixa in 'uLancCaixa.pas' {fLancCaixa},
+  uConsultaLancCaixa in 'uConsultaLancCaixa.pas' {fConsultaLancCaixa},
+  uRelTitulosPagarAberto in 'uRelTitulosPagarAberto.pas' {fRelTitulosPagarAberto},
+  uGraficoDizimo in 'uGraficoDizimo.pas' {fGraficoDizimo},
+  uBxContasPagar in 'uBxContasPagar.pas' {fBxContasPagar},
+  uVisualizaContasPagar in 'uVisualizaContasPagar.pas' {fRelTitulosPagarAberto1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TdmDados, dmDados);
+  Application.CreateForm(TDM1, DM1);
+  Application.CreateForm(TfPrincipal, fPrincipal);
+  Application.CreateForm(TfConfig, fConfig);
+  Application.CreateForm(TfBatisterio, fBatisterio);
+  Application.CreateForm(TfLancCaixa, fLancCaixa);
+  Application.CreateForm(TfConsultaLancCaixa, fConsultaLancCaixa);
+  Application.CreateForm(TfCertidaoNegBatismo, fCertidaoNegBatismo);
+  Application.CreateForm(TfRelTitulosPagarAberto, fRelTitulosPagarAberto);
+  Application.CreateForm(TfConsultaTipoPgto, fConsultaTipoPgto);
+  Application.CreateForm(TfConsultaFornecedor, fConsultaFornecedor);
+  Application.CreateForm(TfLogin, fLogin);
+  Application.CreateForm(TfParoquias, fParoquias);
+  Application.CreateForm(TfConsultaParoquias, fConsultaParoquias);
+  Application.CreateForm(TfArquidiocese, fArquidiocese);
+  Application.CreateForm(TfComunidades, fComunidades);
+  Application.CreateForm(TfCatequista, fCatequista);
+  Application.CreateForm(TfConsultaCatequista, fConsultaCatequista);
+  Application.CreateForm(TfDizimista, fDizimista);
+  Application.CreateForm(TfConsultaArquidiocese, fConsultaArquidiocese);
+  Application.CreateForm(TfMinistrosPadres, fMinistrosPadres);
+  Application.CreateForm(TfConsultaComunidade, fConsultaComunidade);
+  Application.CreateForm(TfConsultaDizimista, fConsultaDizimista);
+  Application.CreateForm(TfConsultaMinistrosPadres, fConsultaMinistrosPadres);
+  Application.CreateForm(TfIntencoesMissas, fIntencoesMissas);
+  Application.CreateForm(TfConsultaIntencoesMissas, fConsultaIntencoesMissas);
+  Application.CreateForm(TfMarca, fMarca);
+  Application.CreateForm(TfConsultaMarca, fConsultaMarca);
+  Application.CreateForm(TfGrupo, fGrupo);
+  Application.CreateForm(TfConsultaGrupo, fConsultaGrupo);
+  Application.CreateForm(TfCrismandos, fCrismandos);
+  Application.CreateForm(TfConsultaCrismandos, fConsultaCrismandos);
+  Application.CreateForm(TfBatizados, fBatizados);
+  Application.CreateForm(TfConsultaBatizados, fConsultaBatizados);
+  Application.CreateForm(TfEucaristia, fEucaristia);
+  Application.CreateForm(TfConsultaEucaristia, fConsultaEucaristia);
+  Application.CreateForm(TfConsultaBatisterio, fConsultaBatisterio);
+  Application.CreateForm(TfCrisma, fCrisma);
+  Application.CreateForm(TfEucaristico, fEucaristico);
+  Application.CreateForm(TfConsultaEucaristico, fConsultaEucaristico);
+  Application.CreateForm(TfConsultaCrisma, fConsultaCrisma);
+  Application.CreateForm(TfLembrancaEucaristia, fLembrancaEucaristia);
+  Application.CreateForm(TfDizimo, fDizimo);
+  Application.CreateForm(TfRelBatismo, fRelBatismo);
+  Application.CreateForm(TfRelEucaristico, fRelEucaristico);
+  Application.CreateForm(TfRelCrisma, fRelCrisma);
+  Application.CreateForm(TfLog, fLog);
+  Application.CreateForm(TfConsultaDizimo, fConsultaDizimo);
+  Application.CreateForm(TfPesquisaDizimista, fPesquisaDizimista);
+  Application.CreateForm(TfRelPeriodico, fRelPeriodico);
+  Application.CreateForm(TfAniversariantes, fAniversariantes);
+  Application.CreateForm(TfExtratoGeral, fExtratoGeral);
+  Application.CreateForm(TfUsuarios, fUsuarios);
+  Application.CreateForm(TfPermissoes, fPermissoes);
+  Application.CreateForm(TfFornecedor, fFornecedor);
+  Application.CreateForm(TfPrevRecebDia, fPrevRecebDia);
+  Application.CreateForm(TfMatrimonio, fMatrimonio);
+  Application.CreateForm(TfCadNoivos, fCadNoivos);
+  Application.CreateForm(TfConsultaNoivos, fConsultaNoivos);
+  Application.CreateForm(TfConsultaMatrimonio, fConsultaMatrimonio);
+  Application.CreateForm(TfContas, fContas);
+  Application.CreateForm(TfConsultaContas, fConsultaContas);
+  Application.CreateForm(TfTipoPgto, fTipoPgto);
+  Application.CreateForm(TfConsultaUsuarios, fConsultaUsuarios);
+  Application.CreateForm(TfRelMatrimonio, fRelMatrimonio);
+  Application.CreateForm(TfLancIntencoes, fLancIntencoes);
+  Application.CreateForm(TfConsultaLancIntencoes, fConsultaLancIntencoes);
+  Application.CreateForm(TfRelIntencoesMissa, fRelIntencoesMissa);
+  Application.CreateForm(TfContasPagar, fContasPagar);
+  Application.CreateForm(TfConsultaContasPagar, fConsultaContasPagar);
+  Application.CreateForm(TfAgendaTelefones, fAgendaTelefones);
+  Application.CreateForm(TfConsultaAgendaTelefones, fConsultaAgendaTelefones);
+  Application.CreateForm(TfLembrancaMatrimonio, fLembrancaMatrimonio);
+  Application.CreateForm(TfMovimentoBancario, fMovimentoBancario);
+  Application.CreateForm(TfGraficoDizimo, fGraficoDizimo);
+  Application.CreateForm(TfBxContasPagar, fBxContasPagar);
+  Application.CreateForm(TfRelTitulosPagarAberto1, fRelTitulosPagarAberto1);
+  //fPrincipal.mnuLogOf.Click;
+  Application.Run;
+end.

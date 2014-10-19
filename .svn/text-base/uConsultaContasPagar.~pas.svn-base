@@ -1,0 +1,445 @@
+unit uConsultaContasPagar;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, IBCustomDataSet, IBQuery, SkinGrids, spDBGrids,
+  DynamicSkinForm, SkinCtrls, StdCtrls, Mask, SkinBoxCtrls, HintBalloon,
+  CheckLst, ExtCtrls;
+
+type
+    TAuxDbGrid=CLASS(TspSkinDBGrid);
+  TfConsultaContasPagar = class(TForm)
+    spDynamicSkinForm1: TspDynamicSkinForm;
+    dsConsulta: TDataSource;
+    IBConsultaContasPagar: TIBQuery;
+    label101: TspSkinLabel;
+    btCadastrar: TspSkinButton;
+    btSair: TspSkinButton;
+    btNovo: TspSkinButton;
+    DbGrid1: TspSkinDBGrid;
+    HintBalloon1: THintBalloon;
+    IBConsultaContasPagarPAROQUIA: TIntegerField;
+    IBConsultaContasPagarCODIGO: TIntegerField;
+    IBConsultaContasPagarFORNECEDOR: TIntegerField;
+    IBConsultaContasPagarDTLANCAMENTO: TDateField;
+    IBConsultaContasPagarDTVENCIMENTO: TDateField;
+    IBConsultaContasPagarTIPO_PAGTO: TIntegerField;
+    IBConsultaContasPagarVALORTOTAL: TFloatField;
+    IBConsultaContasPagarVALORRESTANTE: TFloatField;
+    IBConsultaContasPagarSTATUS: TIBStringField;
+    IBConsultaContasPagarNOTAFISCAL: TIBStringField;
+    IBConsultaContasPagarDTALTERACAO: TDateTimeField;
+    IBConsultaContasPagarOBS: TIBStringField;
+    IBConsultaContasPagarNOME_FANTASIA: TIBStringField;
+    IBConsultaContasPagarNOME: TIBStringField;
+    dbeTipo: TspSkinEdit;
+    EdtTipo: TspSkinEdit;
+    btPesquisar: TspSkinButton;
+    boxVencimento: TspSkinCheckRadioBox;
+    lbDtInicial: TspSkinLabel;
+    EdtDtInicio: TspSkinMaskEdit;
+    lbDtFinal: TspSkinLabel;
+    EdtDtFinal: TspSkinMaskEdit;
+    BoxTipoPgto: TspSkinCheckRadioBox;
+    BoxFornecedor: TspSkinCheckRadioBox;
+    DbeFornecedor: TspSkinEdit;
+    EdtFornecedor: TspSkinEdit;
+    rgSituacao: TspSkinRadioGroup;
+    procedure btPesquisarClick(Sender: TObject);
+    procedure dbGrid1Enter(Sender: TObject);
+    procedure dbGrid1Exit(Sender: TObject);
+    procedure dbGrid1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure btSairClick(Sender: TObject);
+    procedure btCadastrarClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+    procedure FormKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure DbGrid1DblClick(Sender: TObject);
+    procedure dbeTipoEnter(Sender: TObject);
+    procedure dbeTipoExit(Sender: TObject);
+    procedure DbeFornecedorEnter(Sender: TObject);
+    procedure DbeFornecedorExit(Sender: TObject);
+    procedure btPesquisarMouseEnter(Sender: TObject);
+    procedure boxTipoClick(Sender: TObject);
+    procedure dbeTipoKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure dbeTipoKeyPress(Sender: TObject; var Key: Char);
+    procedure FormActivate(Sender: TObject);
+    procedure btNovoMouseEnter(Sender: TObject);
+    procedure btSairMouseEnter(Sender: TObject);
+    procedure btCadastrarMouseEnter(Sender: TObject);
+    procedure DbeFornecedorKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+    procedure DbGrid1DrawColumnCell(Sender: TObject; const Rect: TRect;
+      DataCol: Integer; Column: TspColumn; State: TGridDrawState);
+    procedure EdtDtFinalEnter(Sender: TObject);
+    procedure boxVencimentoClick(Sender: TObject);
+    procedure BoxTipoPgtoClick(Sender: TObject);
+    procedure BoxFornecedorClick(Sender: TObject);
+    procedure RefazerSQL;
+    procedure btNovoClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+    procedure btPesquisarKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    fRetorno : TForm;
+    Entrando,xBuscar,xOrigemConsulta : Boolean;
+    xNumDevolucao : Integer;
+    StrSql : String;
+  end;
+
+var
+  fConsultaContasPagar: TfConsultaContasPagar;
+
+implementation
+
+uses uPrincipal, Sistools, uDMDados, uContasPagar, uDM1, uConsultaTipoPgto,
+  uConsultaFornecedor, Math;
+
+{$R *.dfm}
+
+procedure TfConsultaContasPagar.btPesquisarClick(Sender: TObject);
+begin
+
+   RefazerSQL;
+
+end;
+
+procedure TfConsultaContasPagar.dbGrid1Enter(Sender: TObject);
+begin
+  label101.Caption := 'ENTER - CONFIRMA PESQUISA';
+end;
+
+procedure TfConsultaContasPagar.dbGrid1Exit(Sender: TObject);
+begin
+   label101.Caption := '';
+end;
+
+procedure TfConsultaContasPagar.dbGrid1KeyDown(Sender: TObject;
+  var Key: Word; Shift: TShiftState);
+begin
+   if Key = VK_RETURN then
+     Begin
+       if (IBConsultaContasPagar.Active) And (IBConsultaContasPagar.FieldByName ('CODIGO').AsString <> '')     then
+         Begin
+          fPrincipal.ValorRetornoInteger := IBConsultaContasPagar.FieldByName('CODIGO').AsInteger;
+          fConsultaContasPagar.Close;
+          End
+      Else
+       Begin
+         Exit;
+       End;
+     End;
+end;
+
+procedure TfConsultaContasPagar.btSairClick(Sender: TObject);
+begin
+  fConsultaContasPagar.Close;
+end;
+
+procedure TfConsultaContasPagar.btCadastrarClick(Sender: TObject);
+begin
+  fConsultaContasPagar.Enabled := False;
+  fConsultaContasPagar.fRetorno:=fContasPagar;
+  fContasPagar.Enabled:= True ;
+  fContasPagar.xOrigemConsulta := True;
+  fContasPagar.Show;
+end;
+
+procedure TfConsultaContasPagar.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+  IBConsultaContasPagar.Close;
+  fRetorno.Enabled := True;
+  fRetorno.Show;
+end;
+
+procedure TfConsultaContasPagar.FormCreate(Sender: TObject);
+begin
+   DeleteMenu(GetSystemMenu(Handle, False), SC_MOVE, MF_BYCOMMAND);
+   EdtTipo.Clear;
+   EdtFornecedor.Clear;
+   EdtDtInicio.Clear;
+   EdtDtFinal.Clear;
+end;
+
+procedure TfConsultaContasPagar.FormKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+    if (Shift = []) and (Key = VK_F2 ) then
+    Begin
+      if btNovo.Enabled then
+        btNovo.onClick(Self);
+    End
+  else if (Shift = []) and (Key = VK_ESCAPE  ) then
+    Begin
+      if btSair.Enabled then
+        btSair.onClick(Self);
+    End
+  else if (Shift = []) and (Key = VK_F3  ) then
+    Begin
+      if btCadastrar.Enabled then
+        btCadastrar.onClick(Self);
+    End
+  else if (Shift = []) and (Key = VK_RETURN ) then
+    Begin
+      //if btPesquisar.Enabled then
+        // btPesquisar.OnClick(Self);
+    End;
+end;
+
+procedure TfConsultaContasPagar.DbGrid1DblClick(Sender: TObject);
+begin
+  if (IBConsultaContasPagar.Active) And (IBConsultaContasPagar.FieldByName ('CODIGO').AsString <> '')     then
+    Begin
+      fPrincipal.ValorRetornoInteger := IBConsultaContasPagar.FieldByName('CODIGO').AsInteger;
+      fConsultaContasPagar.Close;
+    End
+  Else
+    Begin
+      Exit;
+    End;
+end;
+
+procedure TfConsultaContasPagar.dbeTipoEnter(Sender: TObject);
+begin
+   label101.Caption   := 'F10 - CADASTRA/CONSULTA';
+end;
+
+procedure TfConsultaContasPagar.dbeTipoExit(Sender: TObject);
+begin
+   EdtTipo.Text := RetornaTabela(DM1.TTipoPgto ,'I','pParoquia',IntToStr(DM1.mParoquia),'I','pCodigo',dbeTipo.Text ,'','','','','','','NOME' );
+   Label101.Caption := '';
+end;
+
+procedure TfConsultaContasPagar.DbeFornecedorEnter(Sender: TObject);
+begin
+   label101.Caption   := 'F10 - CADASTRA/CONSULTA';
+end;
+
+procedure TfConsultaContasPagar.DbeFornecedorExit(Sender: TObject);
+begin
+   EdtFornecedor.Text := RetornaTabela(DM1.TFornecedor ,'I','pParoquia',IntToStr(DM1.mParoquia),'I','pCodigo',DbeFornecedor.Text ,'','','','','','','NOME_FANTASIA' );
+   Label101.Caption := '';
+end;
+
+procedure TfConsultaContasPagar.btPesquisarMouseEnter(Sender: TObject);
+begin
+   HintBalloon1.Text:='Pesquisar Contas a Pagar';
+   HintBalloon1.AddToolInfo(Handle,btPesquisar.Handle);
+end;
+
+procedure TfConsultaContasPagar.boxTipoClick(Sender: TObject);
+begin
+   DbeTipo.Enabled           :=True;
+   dbeTipo.DefaultColor      :=clWindow;
+   DbeFornecedor.Enabled     :=False;
+   DbeFornecedor.DefaultColor:=$00C1F7EF;
+   
+end;
+
+procedure TfConsultaContasPagar.dbeTipoKeyDown(Sender: TObject;
+  var Key: Word; Shift: TShiftState);
+begin
+   if (Shift = []) and (key = VK_F10) then
+     begin
+       key := 0;
+       xNumDevolucao := 1;
+       fPrincipal.ValorRetornoInteger := 0;
+       xBuscar := True;
+       fConsultaTipoPgto.fRetorno := fConsultaContasPagar;
+       fConsultaContasPagar.Enabled := False;
+       fConsultaTipoPgto.Show;
+     End;
+end;
+
+procedure TfConsultaContasPagar.dbeTipoKeyPress(Sender: TObject;
+  var Key: Char);
+begin
+   Key := SoNumeros(Key ,'I');
+end;
+
+procedure TfConsultaContasPagar.FormActivate(Sender: TObject);
+begin
+   If (xBuscar) and (xNumDevolucao = 1) then
+      Begin
+         dbeTipo.Text := IntToStr( fPrincipal.ValorRetornoInteger);
+         fPrincipal.ValorRetornoInteger := 0;
+      end;
+   If (xBuscar) and (xNumDevolucao=2) then
+      Begin
+         DbeFornecedor.Text := IntToStr(fPrincipal.ValorRetornoInteger);
+         fPrincipal.ValorRetornoInteger := 0;
+      End;
+end;
+
+procedure TfConsultaContasPagar.btNovoMouseEnter(Sender: TObject);
+begin
+   HintBalloon1.Text:='Limpar';
+   HintBalloon1.AddToolInfo(Handle,btNovo.Handle);
+end;
+
+procedure TfConsultaContasPagar.btSairMouseEnter(Sender: TObject);
+begin
+   HintBalloon1.Text:='Sair da Consulta Contas a Pagar';
+   HintBalloon1.AddToolInfo(Handle,btSair.Handle);
+end;
+
+procedure TfConsultaContasPagar.btCadastrarMouseEnter(Sender: TObject);
+begin
+   HintBalloon1.Text:='Cadastrar';
+   HintBalloon1.AddToolInfo(Handle,btCadastrar.Handle);
+end;
+
+procedure TfConsultaContasPagar.DbeFornecedorKeyDown(Sender: TObject;
+  var Key: Word; Shift: TShiftState);
+begin
+   if (Shift = []) and (key = VK_F10) then
+     begin
+       key := 0;
+       xNumDevolucao := 2;
+       fPrincipal.ValorRetornoInteger := 0;
+       xBuscar := True;
+       fConsultaFornecedor.fRetorno := fConsultaContasPagar;
+       fConsultaContasPagar.Enabled := False;
+       fConsultaFornecedor.Show;
+     End;
+end;
+
+procedure TfConsultaContasPagar.DbGrid1DrawColumnCell(Sender: TObject;
+  const Rect: TRect; DataCol: Integer; Column: TspColumn;
+  State: TGridDrawState);
+begin
+    If (TAuxDbGrid(dbGrid1).DataLink.ActiveRecord + 1 = TAuxDbGrid(dbGrid1).Row) or (GdSelected in State) then
+   Begin
+      dbGrid1.Canvas.Brush.Color  := clSkyBlue;
+      dbGrid1.Canvas.Font.Style   := dbGrid1.Canvas.Font.Style + [fsItalic];
+      dbGrid1.Canvas.Font.Color   := clBlue;
+   End;
+   dbGrid1.Canvas.FillRect(Rect);
+   dbGrid1.Canvas.TextOut(Rect.Left+2,Rect.Top,Column.Field.AsString);
+end;
+
+procedure TfConsultaContasPagar.EdtDtFinalEnter(Sender: TObject);
+begin
+   label101.Caption  := 'ENTER - PROCESSA A PESQUISA';
+end;
+
+procedure TfConsultaContasPagar.boxVencimentoClick(Sender: TObject);
+begin
+   EdtDtInicio.SetFocus;
+   EdtDtInicio.Clear;
+   EdtDtFinal.Clear;
+end;
+
+procedure TfConsultaContasPagar.BoxTipoPgtoClick(Sender: TObject);
+begin
+  dbeTipo.SetFocus;
+  dbeTipo.Clear;
+  EdtTipo.Clear;
+end;
+
+procedure TfConsultaContasPagar.BoxFornecedorClick(Sender: TObject);
+begin
+   DbeFornecedor.SetFocus;
+   DbeFornecedor.Clear;
+   EdtFornecedor.Clear;
+end;
+Procedure TfConsultaContasPagar.RefazerSql;
+Begin
+   If (boxVencimento.Checked) then
+      Begin
+         If not DataValida(EdtDtInicio.Text) then
+            Begin
+               Application.MessageBox('Informe a data Inicial para Consultar!','Atenção',MB_OK + MB_ICONINFORMATION);
+               EdtDtInicio.SetFocus;
+               Exit;
+            End;
+         If not DataValida(EdtDtFinal.Text) then
+            Begin
+               Application.MessageBox('Informe a data Final para Consultar!','Atenção',MB_OK + MB_ICONINFORMATION);
+               EdtDtFinal.SetFocus;
+               Exit;
+            End;
+      End;
+   If (BoxTipoPgto.Checked) and (dbeTipo.Text='') then
+      Begin
+         Application.MessageBox('Informe o Tipo de Pagamento para Consultar !','Atenção',MB_OK+MB_ICONINFORMATION);
+         dbeTipo.SetFocus;
+         Exit;
+      End;
+   If (BoxFornecedor.Checked) and (DbeFornecedor.Text='') then
+      Begin
+         Application.MessageBox('Informe o Fornecedor para Consultar !','Atenção',MB_OK+MB_ICONINFORMATION);
+         DbeFornecedor.SetFocus;
+         Exit;
+      End;
+   StrSql:=('SELECT CONTASPAGAR.*,FORNECEDOR.NOME_FANTASIA,TIPOPGTO.NOME ');
+   StrSql:=(StrSql+'FROM CONTASPAGAR LEFT JOIN FORNECEDOR ON CONTASPAGAR.FORNECEDOR=FORNECEDOR.CODIGO ');
+   StrSql:=(StrSql+' LEFT JOIN TIPOPGTO ON CONTASPAGAR.TIPO_PAGTO=TIPOPGTO.CODIGO WHERE CONTASPAGAR.PAROQUIA=:PPAROQUIA');
+
+   IBConsultaContasPagar.Close;
+   IBConsultaContasPagar.SQL.Clear;
+   IBConsultaContasPagar.SQL.Add(StrSql);
+   If (boxVencimento.Checked) then
+      Begin
+         IBConsultaContasPagar.SQL.Add('AND CONTASPAGAR.DTVENCIMENTO >= :pDTINICIO AND CONTASPAGAR.DTVENCIMENTO <= :pDTFINAL');
+         IBConsultaContasPagar.ParamByName('PDTINICIO').AsDateTime := StrToDateTime(EdtDtInicio.Text);
+         IBConsultaContasPagar.ParamByName('PDTFINAL').AsDateTime  := StrToDateTime(EdtDtFinal.Text);
+      End;
+   If (BoxTipoPgto.Checked) then
+      Begin
+         IBConsultaContasPagar.SQL.Add('AND CONTASPAGAR.TIPO_PAGTO =:pTIPOPGTO ');
+         IBConsultaContasPagar.ParamByName('pTIPOPGTO').AsString   := dbeTipo.Text;
+      End;
+   If (BoxFornecedor.Checked) then
+      Begin
+         IBConsultaContasPagar.SQL.Add('AND CONTASPAGAR.FORNECEDOR =:pFORNECEDOR');
+         IBConsultaContasPagar.ParamByName('pFORNECEDOR').AsString := DbeFornecedor.Text;
+      End;
+
+    case rgSituacao.ItemIndex of
+      0 : IBConsultaContasPagar.SQL.Add(' AND COALESCE(CONTASPAGAR.STATUS,'''') <> ''QT''');
+      1 : IBConsultaContasPagar.SQL.Add(' AND COALESCE(CONTASPAGAR.STATUS,'''') = ''QT''');
+    end;
+
+
+   IBConsultaContasPagar.ParamByName('PPAROQUIA').AsInteger := DM1.mParoquia;
+   IBConsultaContasPagar.Open;
+  if not IBConsultaContasPagar.IsEmpty then
+     dbGrid1.SetFocus;
+
+      
+
+End;
+procedure TfConsultaContasPagar.btNovoClick(Sender: TObject);
+begin
+   EdtDtInicio.Clear;
+   EdtDtFinal.Clear;
+   dbeTipo.Clear;
+   EdtTipo.Clear;
+   DbeFornecedor.Clear;
+   EdtFornecedor.Clear;
+end;
+
+procedure TfConsultaContasPagar.FormShow(Sender: TObject);
+begin
+   label101.Caption   := 'ENTER - PROCESSA A PESQUISA';
+   btPesquisar.SetFocus;
+end;
+
+procedure TfConsultaContasPagar.btPesquisarKeyDown(Sender: TObject;
+  var Key: Word; Shift: TShiftState);
+begin
+   If Key = VK_RETURN then
+    RefazerSQL;
+end;
+
+end.

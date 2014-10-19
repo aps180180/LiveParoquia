@@ -1,0 +1,1245 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 27
+/svn/liveparoquia/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/liveparoquia/!svn/ver/27/Fontes
+END
+uPesquisaDizimista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.pas
+END
+uRelIntencoesMissa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelIntencoesMissa.dfm
+END
+uDMDados.pas
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/liveparoquia/!svn/ver/2/Fontes/uDMDados.pas
+END
+uConsultaCatequista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCatequista.pas
+END
+LiveParoquia.~dpr
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/27/Fontes/LiveParoquia.~dpr
+END
+uCrisma.pas
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uCrisma.pas
+END
+uConsultaMarca.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMarca.dfm
+END
+uPrevRecebDia.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.ddp
+END
+uBxContasPagar.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/27/Fontes/uBxContasPagar.dfm
+END
+uConsultaComunidade.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaComunidade.pas
+END
+uRelMatrimonio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelMatrimonio.pas
+END
+uDM1.pas
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/liveparoquia/!svn/ver/15/Fontes/uDM1.pas
+END
+uConsultaMinistrosPadres.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMinistrosPadres.dfm
+END
+uConsultaFornecedor.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaFornecedor.dfm
+END
+uConsultaUsuarios.pas
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaUsuarios.pas
+END
+uContasPagar.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/15/Fontes/uContasPagar.dfm
+END
+uCatequista.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uCatequista.dfm
+END
+uConsultaNoivos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaNoivos.pas
+END
+uConsultaCrisma.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCrisma.pas
+END
+uCertidaoNegBatismo.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.ddp
+END
+uEucaristia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uEucaristia.pas
+END
+uConsultaLancIntencoes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaLancIntencoes.pas
+END
+uRelTitulosPagarAberto.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/27/Fontes/uRelTitulosPagarAberto.~dfm
+END
+uConsultaParoquias.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaParoquias.dfm
+END
+LiveParoquia.dof
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/LiveParoquia.dof
+END
+uRelTitulosPagarAberto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/liveparoquia/!svn/ver/27/Fontes/uRelTitulosPagarAberto.dfm
+END
+uConsultaBatisterio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaBatisterio.dfm
+END
+uParoquias.pas
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uParoquias.pas
+END
+ULog.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/liveparoquia/!svn/ver/2/Fontes/ULog.dfm
+END
+uConfig.pas
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uConfig.pas
+END
+uLancCaixa.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.~ddp
+END
+uMarca.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uMarca.dfm
+END
+uEucaristico.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/uEucaristico.pas
+END
+Figura2.png
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/Figura2.png
+END
+uConsultaContasPagar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaContasPagar.pas
+END
+uMovimentoBancario.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uMovimentoBancario.pas
+END
+uVisualizaContasPagar.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/27/Fontes/uVisualizaContasPagar.dfm
+END
+uDizimo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uDizimo.dfm
+END
+uConsultaLancCaixa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/7/Fontes/uConsultaLancCaixa.dfm
+END
+uRelPeriodico.pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelPeriodico.pas
+END
+uConsultaFornecedor.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaFornecedor.~dfm
+END
+uLembrancaEucaristia.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uLembrancaEucaristia.dfm
+END
+uLancCaixa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.pas
+END
+uLembrancaMatrimonio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uLembrancaMatrimonio.pas
+END
+uRelBatismo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelBatismo.dfm
+END
+uLancIntencoes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uLancIntencoes.pas
+END
+uConsultaEucaristia.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaEucaristia.dfm
+END
+uConsultaMatrimonio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMatrimonio.pas
+END
+uConsultaDizimo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaDizimo.dfm
+END
+uBatisterio.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.~ddp
+END
+uConsultaDizimista.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaDizimista.dfm
+END
+uComunidades.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/uComunidades.pas
+END
+uDizimista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uDizimista.pas
+END
+uMatrimonio.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.~dfm
+END
+uMatrimonio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.dfm
+END
+uPrincipal.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/27/Fontes/uPrincipal.~dfm
+END
+uPesquisaDizimista.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.~pas
+END
+uConsultaArquidiocese.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaArquidiocese.dfm
+END
+uContas.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uContas.dfm
+END
+uConsultaBatizados.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaBatizados.dfm
+END
+uConsultaTipoPgto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaTipoPgto.pas
+END
+uPrevRecebDia.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.dfm
+END
+LiveParoquia.dpr
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/27/Fontes/LiveParoquia.dpr
+END
+uBatizados.pas
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uBatizados.pas
+END
+uPrincipal.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/27/Fontes/uPrincipal.pas
+END
+uConsultaContas.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaContas.dfm
+END
+uExtratoGeral.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uExtratoGeral.dfm
+END
+uGraficoDizimo.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.~pas
+END
+uCertidaoNegBatismo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.dfm
+END
+uMinistrosPadres.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uMinistrosPadres.pas
+END
+uGraficoDizimo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.pas
+END
+uPermissoes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uPermissoes.pas
+END
+uPrevRecebDia.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.~pas
+END
+uBatisterio.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.ddp
+END
+Sistools.pas
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/liveparoquia/!svn/ver/2/Fontes/Sistools.pas
+END
+uIntencoesMissas.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uIntencoesMissas.dfm
+END
+uPesquisaDizimista.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.ddp
+END
+uConsultaContasPagar.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaContasPagar.~dfm
+END
+uUsuarios.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/liveparoquia/!svn/ver/2/Fontes/uUsuarios.dfm
+END
+uCertidaoNegBatismo.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.~pas
+END
+uLancCaixa.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.~dfm
+END
+uConsultaEucaristico.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaEucaristico.dfm
+END
+uAgendaTelefones.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uAgendaTelefones.dfm
+END
+uCadNoivos.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uCadNoivos.dfm
+END
+uConsultaCrismandos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCrismandos.pas
+END
+LiveParoquia.res
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/LiveParoquia.res
+END
+uCrismandos.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uCrismandos.dfm
+END
+uBatisterio.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.~dfm
+END
+uRelIntencoesMissa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelIntencoesMissa.pas
+END
+uConsultaGrupo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaGrupo.dfm
+END
+uLogin.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uLogin.dfm
+END
+uBxContasPagar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/27/Fontes/uBxContasPagar.pas
+END
+uConsultaMarca.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMarca.pas
+END
+uConsultaMinistrosPadres.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMinistrosPadres.pas
+END
+uConsultaFornecedor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaFornecedor.pas
+END
+uConsultaContasPagar.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaContasPagar.ddp
+END
+uArquidiocese.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uArquidiocese.dfm
+END
+uRelEucaristico.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelEucaristico.dfm
+END
+uContasPagar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/15/Fontes/uContasPagar.pas
+END
+uCatequista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uCatequista.pas
+END
+uConsultaIntencoesMissas.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaIntencoesMissas.dfm
+END
+uRelCrisma.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelCrisma.dfm
+END
+uLancCaixa.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.ddp
+END
+uFornecedor.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uFornecedor.dfm
+END
+LiveParoquia.exe
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/27/Fontes/LiveParoquia.exe
+END
+uRelTitulosPagarAberto.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelTitulosPagarAberto.~pas
+END
+uConsultaParoquias.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaParoquias.pas
+END
+uRelTitulosPagarAberto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelTitulosPagarAberto.pas
+END
+uConsultaBatisterio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaBatisterio.pas
+END
+uGrupo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uGrupo.dfm
+END
+uConsultaAgendaTelefones.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaAgendaTelefones.dfm
+END
+uAniversariantes.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uAniversariantes.dfm
+END
+ULog.pas
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/liveparoquia/!svn/ver/2/Fontes/ULog.pas
+END
+uRelBatismo.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelBatismo.~dfm
+END
+uMarca.pas
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uMarca.pas
+END
+uBatisterio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.dfm
+END
+uTipoPgto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/liveparoquia/!svn/ver/2/Fontes/uTipoPgto.dfm
+END
+uVisualizaContasPagar.pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/27/Fontes/uVisualizaContasPagar.pas
+END
+uPesquisaDizimista.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.~ddp
+END
+uPesquisaDizimista.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.dfm
+END
+uDizimo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uDizimo.pas
+END
+uConsultaLancCaixa.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/7/Fontes/uConsultaLancCaixa.pas
+END
+uConsultaFornecedor.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaFornecedor.~pas
+END
+uLembrancaEucaristia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uLembrancaEucaristia.pas
+END
+uDMDados.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/liveparoquia/!svn/ver/2/Fontes/uDMDados.dfm
+END
+uConsultaCatequista.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCatequista.dfm
+END
+uRelBatismo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelBatismo.pas
+END
+uCrisma.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uCrisma.dfm
+END
+uConsultaEucaristia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaEucaristia.pas
+END
+uDM1.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/liveparoquia/!svn/ver/15/Fontes/uDM1.dfm
+END
+uRelMatrimonio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelMatrimonio.dfm
+END
+uConsultaDizimo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaDizimo.pas
+END
+uConsultaComunidade.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaComunidade.dfm
+END
+uPrincipal.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/20/Fontes/uPrincipal.ddp
+END
+uConsultaUsuarios.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaUsuarios.dfm
+END
+uConsultaDizimista.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaDizimista.pas
+END
+uGraficoDizimo.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.~ddp
+END
+uConsultaNoivos.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaNoivos.dfm
+END
+uConsultaCrisma.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCrisma.dfm
+END
+uGraficoDizimo.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.ddp
+END
+uEucaristia.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uEucaristia.dfm
+END
+uMatrimonio.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.~pas
+END
+uPrevRecebDia.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.~ddp
+END
+uMatrimonio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.pas
+END
+uPrincipal.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/27/Fontes/uPrincipal.~pas
+END
+uConsultaLancIntencoes.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaLancIntencoes.dfm
+END
+uCertidaoNegBatismo.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.~ddp
+END
+uConsultaArquidiocese.pas
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaArquidiocese.pas
+END
+uParoquias.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uParoquias.dfm
+END
+uContas.pas
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uContas.pas
+END
+uConfig.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/liveparoquia/!svn/ver/2/Fontes/uConfig.dfm
+END
+LiveParoquia.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/27/Fontes/LiveParoquia.cfg
+END
+uConsultaBatizados.pas
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaBatizados.pas
+END
+uPrevRecebDia.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.pas
+END
+uEucaristico.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/uEucaristico.dfm
+END
+uConsultaContasPagar.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaContasPagar.dfm
+END
+uMovimentoBancario.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/liveparoquia/!svn/ver/2/Fontes/uMovimentoBancario.dfm
+END
+uConsultaContas.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaContas.pas
+END
+uExtratoGeral.pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uExtratoGeral.pas
+END
+uCertidaoNegBatismo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.pas
+END
+uRelPeriodico.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelPeriodico.dfm
+END
+uLancCaixa.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.dfm
+END
+uLembrancaMatrimonio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uLembrancaMatrimonio.dfm
+END
+uIntencoesMissas.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uIntencoesMissas.pas
+END
+uLancIntencoes.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uLancIntencoes.dfm
+END
+uConsultaContasPagar.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaContasPagar.~pas
+END
+uUsuarios.pas
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/liveparoquia/!svn/ver/2/Fontes/uUsuarios.pas
+END
+uConsultaMatrimonio.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaMatrimonio.dfm
+END
+uComunidades.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/uComunidades.dfm
+END
+uDizimista.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uDizimista.dfm
+END
+uLancCaixa.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uLancCaixa.~pas
+END
+uConsultaEucaristico.pas
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaEucaristico.pas
+END
+uConsultaFornecedor.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaFornecedor.ddp
+END
+uAgendaTelefones.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uAgendaTelefones.pas
+END
+uCadNoivos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uCadNoivos.pas
+END
+uPesquisaDizimista.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/liveparoquia/!svn/ver/26/Fontes/uPesquisaDizimista.~dfm
+END
+uConsultaTipoPgto.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaTipoPgto.dfm
+END
+uCrismandos.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uCrismandos.pas
+END
+uRelTitulosPagarAberto.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/liveparoquia/!svn/ver/20/Fontes/uRelTitulosPagarAberto.ddp
+END
+uBatizados.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uBatizados.dfm
+END
+uBatisterio.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.~pas
+END
+uPrincipal.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/27/Fontes/uPrincipal.dfm
+END
+uConsultaGrupo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaGrupo.pas
+END
+uGraficoDizimo.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.~dfm
+END
+uLogin.pas
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uLogin.pas
+END
+uMinistrosPadres.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uMinistrosPadres.dfm
+END
+uGraficoDizimo.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uGraficoDizimo.dfm
+END
+uPermissoes.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uPermissoes.dfm
+END
+uPrevRecebDia.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/26/Fontes/uPrevRecebDia.~dfm
+END
+uRelEucaristico.pas
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelEucaristico.pas
+END
+uArquidiocese.pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/2/Fontes/uArquidiocese.pas
+END
+uConsultaIntencoesMissas.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaIntencoesMissas.pas
+END
+uRelCrisma.pas
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/liveparoquia/!svn/ver/2/Fontes/uRelCrisma.pas
+END
+uConsultaFornecedor.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uConsultaFornecedor.~ddp
+END
+uCertidaoNegBatismo.~dfm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/liveparoquia/!svn/ver/26/Fontes/uCertidaoNegBatismo.~dfm
+END
+uRelBatismo.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelBatismo.ddp
+END
+uFornecedor.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/uFornecedor.pas
+END
+uGrupo.pas
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/liveparoquia/!svn/ver/2/Fontes/uGrupo.pas
+END
+uConsultaAgendaTelefones.pas
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaAgendaTelefones.pas
+END
+uConsultaCrismandos.dfm
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/liveparoquia/!svn/ver/2/Fontes/uConsultaCrismandos.dfm
+END
+uAniversariantes.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/uAniversariantes.pas
+END
+uRelBatismo.~pas
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uRelBatismo.~pas
+END
+uMatrimonio.~ddp
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.~ddp
+END
+uMatrimonio.ddp
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uMatrimonio.ddp
+END
+uTipoPgto.pas
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/liveparoquia/!svn/ver/2/Fontes/uTipoPgto.pas
+END
+uBatisterio.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/26/Fontes/uBatisterio.pas
+END

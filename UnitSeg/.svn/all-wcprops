@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg
+END
+DCPconst.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/DCPconst.pas
+END
+Md5.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/Md5.dcu
+END
+U_Cipher.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/U_Cipher.pas
+END
+DCPcrypt.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/DCPcrypt.dcu
+END
+IDEA.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/IDEA.pas
+END
+Base64.pas
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/Base64.pas
+END
+Sha1.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/Sha1.dcu
+END
+DCPconst.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/DCPconst.dcu
+END
+Md5.pas
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/Md5.pas
+END
+U_Cipher.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/U_Cipher.dcu
+END
+DCPcrypt.pas
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/DCPcrypt.pas
+END
+IDEA.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/IDEA.dcu
+END
+Base64.dcu
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/liveparoquia/!svn/ver/27/Fontes/UnitSeg/Base64.dcu
+END
+Sha1.pas
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/liveparoquia/!svn/ver/2/Fontes/UnitSeg/Sha1.pas
+END
